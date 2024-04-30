@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Карина Мирзоян](https://up.htmlacademy.ru/adaptive/31/user/2119483).
-* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
+* Наставник: [Александр Сударев](https://htmlacademy.ru/profile/id1152185).
 
 ---
 
