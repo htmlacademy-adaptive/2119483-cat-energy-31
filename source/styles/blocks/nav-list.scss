@@ -3,4 +3,27 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
+  color: $base-color-black;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-bottom: 24px;
+}
+
+.nav-list__item:hover {
+  opacity: 0.6;
+}
+
+.nav-list__item:active {
+  opacity: 0.3;
+}
+
+.nav-list__item-link {
+  color: $base-color-black;
+}
+
+.nav-list__item--active {
+  text-decoration: underline;
+  opacity: 1;
+  color: $bg-base-green;
+  text-underline-offset: 10px;
 }

@@ -1,3 +1,8 @@
 .social {
   $bg-color: #ffffff;
 }
+
+.social__list {
+  display: flex;
+  gap: 24px;
+}
