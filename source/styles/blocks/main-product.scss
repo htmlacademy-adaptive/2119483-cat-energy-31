@@ -1,0 +1,24 @@
+.main-product {
+  background-color: $bg-base-green;
+  font-family: $secondary-font;
+  color: $base-color-white;
+  font-weight: 400;
+}
+
+.main-product__content {
+  background-color: $bg-base-green;
+}
+
+.main-product__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-product__slogan {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.main-product__select-program {
+  color: $base-color-white;
+}
