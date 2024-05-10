@@ -5,7 +5,9 @@
 }
 
 .logo:hover,
-.logo__title:hover {
+.logo:focus,
+.logo__title:hover,
+.logo__title:focus {
   opacity: 0.8;
 }
 

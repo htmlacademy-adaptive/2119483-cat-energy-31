@@ -6,3 +6,55 @@
   display: flex;
   gap: 24px;
 }
+
+.social__icon {
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 22px;
+  display: block;
+  font-size: 0;
+}
+
+.social__icon--vk::before {
+  content: " ";
+  width: 28px;
+  height: 22px;
+  display: block;
+  mask-image: url("/icons/stack.svg#vkontakte");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+  background-color: #666666;
+}
+
+.social__icon--youtube::before {
+  content: " ";
+  width: 28px;
+  height: 22px;
+  display: block;
+  mask-image: url("/icons/stack.svg#youtube");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+  background-color: #666666;
+}
+
+.social__icon--telegram::before {
+  content: " ";
+  width: 28px;
+  height: 22px;
+  display: block;
+  mask-image: url("/icons/stack.svg#telegram");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+  background-color: #666666;
+}
+
+.social__icon:hover::before,
+.social__icon:focus::before {
+  background-color: $bg-base-green;
+  opacity: 1;
+}
+
+.social__icon:active::before {
+  background-color: $bg-base-green;
+  opacity: 0.3;
+}

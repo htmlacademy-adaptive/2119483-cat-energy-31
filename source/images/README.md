@@ -2,7 +2,7 @@
 
 ```shell
 └── source/
-    └── images/
+    └──  /images/
         ├── hero@1x.jpg
         ├── hero@1x.webp
         ├── hero@2x.jpg
@@ -14,7 +14,7 @@
 
 ```shell
 └── build/
-    └── images/
+    └──  /images/
         ├── hero@1x.jpg
         ├── hero@1x.webp
         ├── hero@2x.jpg
