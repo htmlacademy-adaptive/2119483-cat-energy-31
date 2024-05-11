@@ -18,11 +18,10 @@
   <header class="header">
     <a class="logo" href="#index.html">
       <picture>
-        <source type="image/png" media="(min-width: 1440px)" srcset="/images/common/logoDesktop@1x.png 1x, /images/common/logoDesktop@2x.png 2x" width="70" height="59">
-        <source type="image/png" media="(min-width: 768px)" srcset="/images/common/logoTablet@1x.png 1x, /images/common/logoTablet@2x.png 2x" width="60" height="50">
-        <img class="logo__image" src="/images/common/logoMobile@1x.png" srcset="/images/common/logoMobile@2x.png 2x" width="33" height="38" alt="Логотип Cat Energy">
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/icons/stack.svg#logoDesktop" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="/icons/stack.svg#logoTablet" width="60" height="50">
+        <img class="logo__image" src="/icons/stack.svg#logoMobile" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
-      <img class="logo__title" src="/images/common/title.svg" width="101" height="18" alt="Cat Energy">
     </a>
     <nav class="navigation">
       <button class="navigation__toggle navigation__toggle--closed" type="button">
@@ -58,7 +57,8 @@
         <ul class="program__list">
           <li class="program__item">
             <div class="program__content">
-              <p class="program__title program__title--slim">
+              <p class="program__title">
+                <span class="program__title-icon program__title-icon--slim"></span>
                 похудение
               </p>
               <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -69,7 +69,8 @@
           </li>
           <li class="program__item">
             <div class="program__content">
-              <div class="program__title program__title--pro">
+              <div class="program__title">
+                <span class="program__title-icon program__title-icon--pro"></span>
                 Набор массы
               </div>
               <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -152,35 +153,33 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <section class="footer__content">
-      <h2 class="subtitle visually-hidden">Соц.сети</h2>
-      <a class="logo" href="#index.html">
-        <img class="logo__title" src="/images/common/title.svg" width="101" height="18" alt="Cat Energy">
+  <div class="footer__content">
+    <h2 class="subtitle visually-hidden">Соц.сети</h2>
+    <a class="logo" href="#index.html">
+      <img class="logo__title" src="/images/common/title.svg" width="101" height="18" alt="Cat Energy">
+    </a>
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__icon social__icon--vk" href="#">VK</a>
+        </li>
+        <li class="social__item">
+          <a class="social__icon social__icon--youtube" href="#">youtube</a>
+        </li>
+        <li class="social__item">
+          <a class="social__icon social__icon--telegram" href="#">telegram</a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p class="copyright__text">HTML Academy</p>
+      <a class="copyright__link" href="#">HTML Academy
+        <svg viewBox="0 0 32 30" width="32" height="30" xmlns="http://www.w3.org/2000/svg">
+          <use href="/icons/stack.svg#htmlAdademy_logo"></use>
+        </svg>
       </a>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__icon social__icon--vk" href="#">VK</a>
-          </li>
-          <li class="social__item">
-            <a class="social__icon social__icon--youtube" href="#">youtube</a>
-          </li>
-          <li class="social__item">
-            <a class="social__icon social__icon--telegram" href="#">telegram</a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__link" href="#">HTML Academy
-          <svg viewBox="0 0 32 30" width="32" height="30" xmlns="http://www.w3.org/2000/svg">
-            <use href="/icons/stack.svg#htmlAdademy_logo"></use>
-          </svg>
-        </a>
-      </div>
-    </section>
-  </footer>
+    </div>
+  </div>
 </body>
 
 </html>
