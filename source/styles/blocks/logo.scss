@@ -1,17 +1,24 @@
-.logo,
-.logo__title {
+.logo {
   $bg-color:#ffffff;
   opacity: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 13px;
+  }
+}
+
+.logo__title {
+  @media (min-width: $tablet-width) {
+    width: 129px;
+    height: 25px;
+  }
 }
 
 .logo:hover,
-.logo:focus,
-.logo__title:hover,
-.logo__title:focus {
+.logo:focus {
   opacity: 0.8;
 }
 
-.logo:active,
-.logo__title:active {
+.logo:active {
   opacity: 0.6;
 }

@@ -3,8 +3,9 @@
 }
 
 .social__list {
-  display: flex;
   gap: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .social__icon {

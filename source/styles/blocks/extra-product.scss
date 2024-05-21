@@ -5,25 +5,78 @@
   line-height: 16px;
 }
 
+.extra-product__content {
+  border-bottom: 2px solid $line-base-grey;
+  margin-bottom: 35px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .extra-product__description {
   font-family: $primary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  overflow: hidden;
+}
+
+.extra-product__description-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-product__item {
+  border-top: 2px solid $line-base-grey;
+  padding-top: 13px;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.extra-product__subtitle {
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 36px;
+  margin: 0;
+  padding-top: 25px;
+  position: relative;
+  width: fit-content;
+  box-shadow: -30px 0 0 0 $base-color-white, 30px 0 0 0 $base-color-white;
+  background: $base-color-white;
+}
+
+.extra-product__subtitle::before {
+  content: " ";
+  background: #68b738;
+  width: 100vw;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  box-shadow: 100vw 0 #68b738;
+  z-index: -1;
 }
 
 .extra-product__gift {
-  display: flex;
-  place-content: center center;
-  align-items: center;
-  flex-direction: column;
   background-color: $bg-base-green;
   background-image: url("/images/catalog/giftMobile@2x.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 290px;
-  height: 280px;
+  padding: 59px 61px 43px 58px;
+  text-align: center;
 }
 
 .extra-product__gift::before {
@@ -33,12 +86,12 @@
   width: 78px;
   height: 80px;
   display: block;
+  margin: 0 auto 48px;
 }
 
 @media (min-width: 768px) {
   .extra-product__gift {
     background-image: url("/images/catalog/giftTablet@2x.png");
-    width: 707px;
     height: 200px;
   }
 }
@@ -46,7 +99,6 @@
 @media (min-width: 1440px) {
   .extra-product__gift {
     background-image: url("/images/catalog/giftDesktop@2x.png");
-    width: 245px;
     height: 288px;
   }
 }

@@ -1,17 +1,48 @@
+.program {
+  padding-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 82px;
+  }
+}
+
+.program__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .program__title {
   display: flex;
   gap: 20px;
   text-transform: uppercase;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 24px;
   font-weight: 700;
   line-height: 37px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program__title-icon {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 81px;
+    right: 63px;
+  }
 }
 
 .program__title-icon::before {
@@ -22,6 +53,17 @@
   width: 50px;
   height: 50px;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    content: " ";
+    background-color: #68b738;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+  }
 }
 
 .program__title-icon::after {
@@ -34,16 +76,34 @@
   inset: -3px 7px 3px;
   background-image: url("/icons/stack.svg#cat-slim");
   background-size: 36px 50px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 140px 194px;
+    inset: -17px 22px;
+  }
 }
 
 .program__title-icon--pro::after {
   inset: 11px -9px;
   background-image: url("/icons/stack.svg#cat-pro");
   background-size: 67px 28px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 286px 112px;
+    inset: 44px -44px;
+  }
 }
 
 .program__item {
   background-color: $bg-base-lightgrey;
+  padding-top: 21px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 372px;
+    padding: 0;
+  }
 }
 
 .program__description {
@@ -52,6 +112,19 @@
   font-weight: 400;
   line-height: 18px;
   color: $base-color-grey;
+  padding-bottom: 23px;
+  padding-right: 13px;
+  border-bottom: 2px solid #d9d9d9;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: 0;
+    padding-right: 318px;
+    padding-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .program__link {
@@ -64,6 +137,15 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 48px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .program__link::after {
@@ -82,4 +164,14 @@
 
 .program__link:active::after {
   opacity: 0.3;
+}
+
+.program__item-content {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 77px;
+    padding-left: 52px;
+  }
 }

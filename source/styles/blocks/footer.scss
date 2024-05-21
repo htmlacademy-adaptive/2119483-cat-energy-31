@@ -1,3 +1,28 @@
 .footer {
-  $bg-color:#ffffff;
+  background-color: #f2f2f2;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.footer__content-item {
+  border-bottom: 2px solid $bg-base-grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0;
+  }
 }

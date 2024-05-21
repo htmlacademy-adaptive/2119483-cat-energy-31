@@ -1,3 +1,7 @@
 .main-container {
   $bg-color:#ffffff;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
+  }
 }

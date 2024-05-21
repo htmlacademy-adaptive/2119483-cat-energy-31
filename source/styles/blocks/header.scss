@@ -1,3 +1,48 @@
 .header {
   $bg-color:#ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+    position: relative;
+    padding: 25px 34px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
+  }
+}
+
+.header__toggle {
+  background-color: #ffffff;
+  background-image: url("/icons/stack.svg#burger_menu_closed");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__toggle--closed {
+  background-image: url("/icons/stack.svg#burger_menu_opened");
+}
+
+.header__logo-title {
+  $bg-color:#ffffff;
+  opacity: 1;
+}
+
+.header__logo-title:hover,
+.header__logo-title:focus {
+  opacity: 0.8;
+}
+
+.header__logo-title:active {
+  opacity: 0.6;
 }

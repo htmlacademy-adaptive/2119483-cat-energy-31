@@ -1,5 +1,58 @@
 .example__content {
   background-color: $bg-base-grey;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 47px 0 0;
+    background-color: $base-color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.example__content-info {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 99px;
+  }
+}
+
+.example__subtitle {
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 43px;
+    display: grid;
+    width: 377px;
+  }
+}
+
+.example__info {
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .example__description {
@@ -8,6 +61,25 @@
   font-weight: 400;
   line-height: 18px;
   color: $base-color-grey;
+  padding-top: 40px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 60px;
+  }
+}
+
+.example__item {
+  border: 2px solid $line-base-grey;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .example__item > dt {
@@ -15,13 +87,41 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item > dd {
+  text-align: center;
+  margin: 0 16px;
+  padding-top: 7px;
   font-family: $primary-font;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  position: absolute;
+  top: 46px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: $bg-base-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 0;
+    background-color: $base-color-white;
+    white-space: nowrap;
+    padding: 0 8px;
+  }
 }
 
 .example__spending {
@@ -29,10 +129,26 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 28px;
+    width: 174px;
+    text-align: right;
+  }
 }
 
 .example__slider {
   position: relative;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $line-base-grey;
+  }
 }
 
 .example__slider-button {
@@ -47,7 +163,11 @@
   display: block;
   position: absolute;
   top: 0;
-  left: -2px;
+  left: 50%;
+}
+
+.example__slider-after {
+  display: none;
 }
 
 .example__slider-button:hover,

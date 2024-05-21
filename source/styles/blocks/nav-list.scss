@@ -6,7 +6,14 @@
   color: $base-color-black;
   text-transform: uppercase;
   opacity: 1;
-  padding-bottom: 24px;
+  border-top: 2px solid $base-color-lightgrey;
+  height: 66px;
+  text-align: center;
+  align-content: center;
+
+  @media (min-width: $desktop-width) {
+    color: $base-color-white;
+  }
 }
 
 .nav-list__item:hover,
@@ -20,6 +27,22 @@
 
 .nav-list__item-link {
   color: $base-color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.nav-list__item-link--light {
+  @media (min-width: $desktop-width) {
+    color: $base-color-white;
+  }
 }
 
 .nav-list__item--active {
@@ -27,4 +50,10 @@
   opacity: 1;
   color: $bg-base-green;
   text-underline-offset: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-list__item {
+    border-top: none;
+  }
 }
