@@ -1,0 +1,30 @@
+.logo {
+  $bg-color:$base-color-white;
+  opacity: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 13px;
+  }
+}
+
+.logo__title {
+  @media (min-width: $tablet-width) {
+    width: 129px;
+    height: 25px;
+  }
+}
+
+.logo__title-huge {
+  width: 128px;
+  height: 24px;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:focus-visible {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}

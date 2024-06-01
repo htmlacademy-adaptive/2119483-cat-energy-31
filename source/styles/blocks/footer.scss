@@ -1,0 +1,32 @@
+.footer {
+  background-color: $bg-base-lightgrey;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 61px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
+}
+
+.footer__content-item {
+  border-bottom: 2px solid $bg-base-grey;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0;
+  }
+}

@@ -1,0 +1,139 @@
+.rule {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
+}
+
+.rule__subtitle {
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  overflow-wrap: anywhere;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.rule__content {
+  padding-bottom: 29px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 53px;
+  }
+}
+
+.rule__list {
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    counter-reset: section;
+    grid-template-columns: 255px 325px;
+    justify-content: center;
+    gap: 116px 128px;
+    padding-top: 72px;
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 80px;
+    padding: 65px 0 0;
+    display: grid;
+  }
+}
+
+.rule__description {
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $base-color-grey;
+  overflow-wrap: anywhere;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.rule__item {
+  align-items: center;
+  gap: 20px 20px;
+  display: flex;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 31px;
+    position: relative;
+    max-width: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    gap: 30px;
+  }
+}
+
+.rule__item::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+    top: -40px;
+    right: 0;
+    font-family: $secondary-font;
+  }
+}
+
+
+.rule__icon::before {
+  content: " ";
+  background-position: 50%;
+  background-color: $bg-base-green;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.rule__icon--nutrients::before {
+  background-image: url("../../icons/stack.svg#icon_leaf");
+  background-size: 30px 32px;
+}
+
+.rule__icon--preporation::before {
+  background-image: url("../../icons/stack.svg#icon_water");
+  background-size: 30px 32px;
+}
+
+.rule__icon--addition::before {
+  background-image: url("../../icons/stack.svg#icon_eat");
+  background-size: 30px 32px;
+}
+
+.rule__icon--result::before {
+  background-image: url("../../icons/stack.svg#icon_clock");
+  background-size: 30px 32px;
+}

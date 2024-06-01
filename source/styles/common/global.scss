@@ -1,1 +1,46 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", "Oswald", "Arial", sans-serif;
+  background-color: $base-color-white;
+  margin: 0;
+  min-width: 320px;
+  position: relative;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,1 +1,12 @@
-/* здесь подключите шрифты */
+@mixin font-face($font-family, $font-weight, $font-style, $font-src, $font-display) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: url($font-src);
+    font-display: $font-display;
+  }
+}
+
+@include font-face("Lato", 400, normal, "../../fonts/lato/Lato-Regular.woff2", swap);
+@include font-face("Oswald", 400, normal, "../../fonts/oswald/oswaldregular.woff2", swap);
