@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 27px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -11,30 +11,49 @@
 
 .copyright__link {
   font-size: 0;
+  color: $base-color-grey;
+  margin-top: -5px;
+  margin-right: -2px;
 
   @media (min-width: $tablet-width) {
     padding-left: 23px;
   }
 }
 
+.copyright__link::before {
+  content: " ";
+  background-image: url("../../icons/stack.svg#htmlAdademy_logo");
+  background-size: 0;
+  width: 32px;
+  height: 30px;
+  display: block;
+  mask-image: url("../../icons/stack.svg#htmlAdademy_logo");
+  mask-size: 32px 30px;
+  mask-repeat: no-repeat;
+  background-color: #666666;
+}
+
 .copyright__text {
   font-size: 16px;
   line-height: 20px;
+  color: $base-color-grey;
 }
 
-.copyright__link:hover,
-.copyright__link:focus {
-  color: $bg-base-green;
+.copyright__link:hover::before,
+.copyright__link:focus::before,
+.copyright__link:focus-visible::before {
+  background-color: $bg-base-green;
   opacity: 1;
 }
 
-.copyright__link:active {
-  color: $bg-base-green;
+.copyright__link:active::before {
+  background-color: $bg-base-green;
   opacity: 0.3;
 }
 
 .copyright__text:hover,
-.copyright__text:focus {
+.copyright__text:focus,
+.copyright__text:focus-visible {
   color: $bg-base-green;
   opacity: 1;
 }

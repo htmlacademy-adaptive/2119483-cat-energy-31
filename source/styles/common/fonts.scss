@@ -8,5 +8,5 @@
   }
 }
 
-@include font-face("Lato", 400, normal, "/fonts/lato/Lato-Regular.woff2", swap);
-@include font-face("Oswald", 400, normal, "/fonts/oswald/oswaldregular.woff2", swap);
+@include font-face("Lato", 400, normal, "../../fonts/lato/Lato-Regular.woff2", swap);
+@include font-face("Oswald", 400, normal, "../../fonts/oswald/oswaldregular.woff2", swap);

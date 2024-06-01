@@ -7,16 +7,26 @@
   text-transform: uppercase;
   opacity: 1;
   border-top: 2px solid $base-color-lightgrey;
-  height: 66px;
+  padding-top: 22px;
+  padding-bottom: 24px;
   text-align: center;
-  align-content: center;
+
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 
   @media (min-width: $desktop-width) {
     color: $base-color-white;
   }
 }
 
+.nav-list__item:first-child {
+  padding-right: 3px;
+}
+
 .nav-list__item:hover,
+.nav-list__item:focus-visible,
 .nav-list__item:focus {
   opacity: 0.6;
 }
@@ -50,9 +60,13 @@
   opacity: 1;
   color: $bg-base-green;
   text-underline-offset: 10px;
+
+  @media (min-width: $desktop-width) {
+    color: $base-color-white;
+  }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: ($tablet-width - 1)) {
   .nav-list__item {
     border-top: none;
   }

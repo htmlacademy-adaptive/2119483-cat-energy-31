@@ -1,9 +1,9 @@
 .button {
-  color: #ffffff;
+  color: $base-color-white;
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
   appearance: none;
-  background: #68b738;
+  background: $bg-base-green;
   border: none;
   outline: none;
   width: auto;
@@ -13,10 +13,14 @@
   line-height: 20px;
   overflow: visible;
   text-transform: uppercase;
-  padding: 10px 63.5px;
+  cursor: pointer;
 }
 
 .button--outline {
-  background: $btn-base-grey;
+  background: $bg-base-lightgrey;
   color: $base-color-black;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0;
+  }
 }

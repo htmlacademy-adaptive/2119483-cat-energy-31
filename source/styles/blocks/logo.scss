@@ -1,5 +1,5 @@
 .logo {
-  $bg-color:#ffffff;
+  $bg-color:$base-color-white;
   opacity: 1;
 
   @media (min-width: $tablet-width) {
@@ -14,8 +14,14 @@
   }
 }
 
+.logo__title-huge {
+  width: 128px;
+  height: 24px;
+}
+
 .logo:hover,
-.logo:focus {
+.logo:focus,
+.logo:focus-visible {
   opacity: 0.8;
 }
 

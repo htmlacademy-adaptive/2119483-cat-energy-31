@@ -6,25 +6,30 @@
 
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="preload" href="styles/styles.css" as="style">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="./favicon.ico"><!-- 32×32 -->
-  <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./favicons/180.png"><!-- 180×180 -->
-  <link rel="manifest" href="/manifest.webmanifest">
-  <script src="/scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="header wrapper-content">
-    <a class="logo" href="#index.html">
+  <header class="header wrapper-content header--no-js" data-test="header">
+    <a class="logo" href="index.html">
       <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/icons/stack.svg#logoDesktop" width="70" height="59">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="/icons/stack.svg#logoTablet" width="60" height="50">
-        <img class="logo__image" src="/icons/stack.svg#logoMobile" width="33" height="38" alt="Логотип Cat Energy">
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="icons/stack.svg#logoDesktop" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#logoTablet" width="60" height="50">
+        <img class="logo__image" loading="lazy" src="icons/stack.svg#logoMobile" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
     </a>
-    <a class="header__logo-title" href="#index.html">
-      <img src="/images/common/title.svg" width="101" height="18" alt="Cat Energy">
+    <a class="header__logo-title" href="index.html">
+      <img loading="lazy" src="images/common/title.svg" width="101" height="18" alt="Cat Energy">
     </a>
     <button class="header__toggle header__toggle--closed" type="button">
       <span class="visually-hidden">
@@ -33,49 +38,49 @@
     </button>
     <nav class="navigation">
       <ul class="navigation__list nav-list">
-        <li class="nav-list__item nav-list__item--active"><a class="nav-list__item-link nav-list__item-link--light" href="#">главная</a></li>
-        <li class="nav-list__item"><a class="nav-list__item-link nav-list__item-link--light" href="#">каталог продукции</a></li>
-        <li class="nav-list__item"><a class="nav-list__item-link nav-list__item-link--light" href="#">подбор программы</a></li>
+        <li class="nav-list__item nav-list__item--active"><a class="nav-list__item-link nav-list__item-link--light" href="index.html">главная</a></li>
+        <li class="nav-list__item"><a class="nav-list__item-link nav-list__item-link--light" href="catalog.html">каталог продукции</a></li>
+        <li class="nav-list__item"><a class="nav-list__item-link nav-list__item-link--light" href="form.html">подбор программы</a></li>
       </ul>
     </nav>
   </header>
   <main class="main-container">
-    <section class="main-product">
+    <section class="main-product" data-test="hero">
       <div class="main-product__content">
         <h1 class="main-product__title">Функциональное питание для котов</h1>
         <p class="main-product__slogan">Занялся собой? Займись котом!</p>
-        <picture class="main-product__picture">
-          <source type="image/png" media="(min-width: 1220px)" srcset="/images/index/indexCanDesktop@1x.png 1x, /images/index/indexCanDesktop@2x.png 2x" width="552" height="499">
-          <source type="image/png" media="(min-width: 768px)" srcset="/images/index/indexCanTablet1@1x.png 1x, /images/index/indexCanTablet1@2x.png 2x" width="709" height="609">
-          <img src="/images/index/indexCanMobile1@1x.png" srcset="/images/index/indexCanMobile1@2x.png 2x" width="280" height="270" alt="Главный продукт">
+        <picture>
+          <source type="image/png" media="(min-width: 1220px)" srcset="images/index/indexCanDesktop@1x.png 1x, images/index/indexCanDesktop@2x.png 2x" width="552" height="499">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/index/indexCanTablet1@1x.png 1x, images/index/indexCanTablet1@2x.png 2x" width="709" height="609">
+          <img class="main-product__picture" loading="lazy" src="images/index/indexCanMobile1@1x.png" srcset="images/index/indexCanMobile1@2x.png 2x" width="280" height="269" alt="Главный продукт">
         </picture>
-        <button class="main-product__select-program" name="button" type="button">Подобрать программу</button>
+        <a class="main-product__select-program" href="form.html">Подобрать программу</a>
       </div>
     </section>
-    <section class="program">
+    <section class="program" data-test="programs">
       <div class="program__content wrapper-content">
         <h2 class="subtitle visually-hidden">Подбор программы</h2>
         <ul class="program__list">
           <li class="program__item">
+            <span class="program__item-icon program__item-icon--slim"></span>
             <div class="program__item-content">
               <p class="program__title">
-                <span class="program__title-icon program__title-icon--slim"></span>
                 похудение
               </p>
               <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program__link" href="#">
+              <a class="program__link" href="catalog-slim.html">
                 каталог slim
               </a>
             </div>
           </li>
           <li class="program__item">
+            <span class="program__item-icon program__item-icon--pro"></span>
             <div class="program__item-content">
               <div class="program__title">
-                <span class="program__title-icon program__title-icon--pro"></span>
                 Набор массы
               </div>
               <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program__link" href="#">
+              <a class="program__link" href="catalog-pro.html">
                 каталог pro
               </a>
             </div>
@@ -83,36 +88,36 @@
         </ul>
       </div>
     </section>
-    <section class="rule">
+    <section class="rule" data-test="features">
       <div class="rule__content wrapper-content">
         <h2 class="rule__subtitle">Как это работает</h2>
         <ul class="rule__list">
           <li class="rule__item">
             <div class="rule__icon rule__icon--nutrients"></div>
-            <div class="rule__description">Функциональное питание содержит только полезные питательные вещества.</div>
+            <p class="rule__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="rule__item">
             <div class="rule__icon rule__icon--preporation"></div>
-            <div class="rule__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</div>
+            <p class="rule__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="rule__item">
             <div class="rule__icon rule__icon--addition"></div>
-            <div class="rule__description">Замените один-два приема обычной еды на наше функциональное питание.</div>
+            <p class="rule__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="rule__item">
             <div class="rule__icon rule__icon--result"></div>
-            <div class="rule__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</div>
+            <p class="rule__description">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего&nbsp;питомца!</p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="example">
+    <section class="example" data-test="proof">
       <div class="example__content">
         <div class="example__content-info wrapper-content">
           <h2 class="example__subtitle">Живой пример</h2>
-          <div class="example__description">
+          <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </div>
+          </p>
           <div class="example__info">
             <dl class="example__list">
               <div class="example__item">
@@ -124,41 +129,48 @@
                 <dd>затрачено времени</dd>
               </div>
             </dl>
-            <p class="example__spending">Затраты на питание: 15 000 РУБ.</p>
+            <p class="example__spending">Затраты на питание: <span class="example__spending-value">15 000 РУБ.</span></p>
           </div>
         </div>
         <div class="example__slider">
-          <picture class="example__slider-before">
-            <source type="image/png" media="(min-width: 768px)" srcset="/images/index/catSliderTablet@1x.png 1x, /images/index/catSliderTablet@2x.png 2x" width="520" height="512">
-            <img class="example__picture" src="/images/index/catSliderMobile@1x.png" srcset="/images/index/catSliderMobile@2x.png 2x" width="280" height="256" alt="Кот после похудения">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/index/catSliderTablet@1x.png 1x, images/index/catSliderTablet@2x.png 2x" width="520" height="512">
+            <img class="example__picture example__slider-before" loading="lazy" src="images/index/catSliderMobile@1x.png" srcset="images/index/catSliderMobile@2x.png 2x" width="280" height="256" alt="Кот после похудения">
           </picture>
           <button class="example__slider-button" type="button">Слайдер</button>
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" data-test="contacts">
       <div class="contact__content">
         <h2 class="subtitle visually-hidden">Контакты</h2>
         <div class="contact__list">
           <div class="contact__list-info wrapper-content">
-            <div class="contact__list-offer">приглашаем к сотрудничеству дилеров!</div>
+            <div class="contact__list-offer">приглашаем к&nbsp;сотрудничеству дилеров!</div>
             <div class="contact__list-address">ул. Большая Конюшенная, д. 19/8 <span class="contact__list-address-city">Санкт-Петербург</span></div>
           </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6722.117842264577!2d30.31522947317896!3d59.94047850166927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716201289622!5m2!1sru!2sru" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <picture>
-            <source type="image/png" media="(min-width: 1220px)" srcset="/images/common/locationDesktop@1x.png 1x, /images/common/locationDesktop@2x.png 2x" width="1220" height="400">
-            <source type="image/png" media="(min-width: 768px)" srcset="/images/common/locationTablet@1x.png 1x, /images/common/locationTablet@2x.png 2x" width="768" height="400">
-            <img class="contact__location" src="/images/common/locationMobile@1x.png" srcset="/images/common/locationMobile@2x.png 2x" width="320" height="362" alt="Локация">
-          </picture>
+          <div class="contact__map contact__map--no-js">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.32047247715258!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1717104217001!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <picture>
+              <source type="image/png" media="(min-width: 1220px)" srcset="images/common/locationDesktop@1x.png 1x, images/common/locationDesktop@2x.png 2x" width="1220" height="400">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/common/locationTablet@1x.png 1x, images/common/locationTablet@2x.png 2x" width="768" height="400">
+              <img class="contact__location" loading="lazy" src="images/common/locationMobile@1x.png" srcset="images/common/locationMobile@2x.png 2x" width="320" height="362" alt="Локация">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="icons/stack.svg#mapPinTablet" width="70" height="59">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#mapPinTablet" width="113" height="106">
+              <img class="contact__map-image" loading="lazy" src="icons/stack.svg#mapPinMobile" width="57" height="53" alt="Логотип Cat Energy">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__content wrapper-content">
       <h2 class="subtitle visually-hidden">Соц.сети</h2>
-      <a class="logo footer__content-item " href="#index.html">
-        <img class="logo__title" src="/images/common/title.svg" width="101" height="18" alt="Cat Energy">
+      <a class="logo footer__content-item " href="index.html">
+        <img class="logo__title logo__title-huge" loading="lazy" src="images/common/title.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <div class="social footer__content-item ">
         <ul class="social__list">
@@ -174,12 +186,8 @@
         </ul>
       </div>
       <div class="copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__link" href="#">HTML Academy
-          <svg viewBox="0 0 32 30" width="32" height="30" xmlns="http://www.w3.org/2000/svg">
-            <use href="/icons/stack.svg#htmlAdademy_logo"></use>
-          </svg>
-        </a>
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
