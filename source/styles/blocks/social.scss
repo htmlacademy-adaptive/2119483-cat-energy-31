@@ -31,7 +31,7 @@
   mask-image: url("../../icons/stack.svg#vkontakte");
   mask-size: 28px 22px;
   mask-repeat: no-repeat;
-  background-color: #666666;
+  background-color: $slider-line-grey;
 }
 
 .social__icon--youtube::before {
@@ -44,7 +44,7 @@
   mask-image: url("../../icons/stack.svg#youtube");
   mask-size: 28px 22px;
   mask-repeat: no-repeat;
-  background-color: #666666;
+  background-color: $slider-line-grey;
 }
 
 .social__icon--telegram::before {
@@ -57,7 +57,7 @@
   mask-image: url("../../icons/stack.svg#telegram");
   mask-size: 28px 22px;
   mask-repeat: no-repeat;
-  background-color: #666666;
+  background-color: $slider-line-grey;
 }
 
 .social__icon:hover::before,
