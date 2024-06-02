@@ -66,6 +66,13 @@
   }
 }
 
+.nav-list__item--active-catalog {
+  text-decoration: underline;
+  opacity: 1;
+  color: $bg-base-green;
+  text-underline-offset: 10px;
+}
+
 @media (min-width: $tablet-width) and (max-width: ($tablet-width - 1)) {
   .nav-list__item {
     border-top: none;
