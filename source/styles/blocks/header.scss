@@ -39,6 +39,11 @@
   $bg-color: $base-color-white;
   opacity: 1;
   padding-right: 10px;
+  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .header__logo-title > img {

@@ -59,10 +59,20 @@
 .card--more-products {
   text-align: center;
 
+  @media (max-width: ($tablet-width - 1)) {
+    padding-bottom: 24px;
+    padding-top: 22px;
+  }
+
   @media (min-width: $tablet-width) {
     border: 2px solid $card-color-lightgrey;
-    padding: 45px 37px 40px;
+    padding: 48px 37px 40px;
     margin-top: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    padding: 45px 41px 40px;
   }
 }
 
@@ -75,7 +85,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 35px;
+    padding-top: 41px;
   }
 }
 
@@ -126,7 +136,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 27px;
+    padding-top: 25px;
+    min-width: calc(25vw - 196px);
+    gap: 10px;
   }
 }
 

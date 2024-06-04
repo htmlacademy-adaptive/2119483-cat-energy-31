@@ -33,9 +33,9 @@
   @media (min-width: $desktop-width) {
     background-color: transparent;
     grid-template-columns: 500px 650px;
-    padding: 19px 0 0;
+    padding: 19px 0 0 10px;
     display: grid;
-    gap: 140px;
+    gap: 150px;
     place-content: center center;
   }
 }
@@ -47,7 +47,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 51px;
-    padding-left: 30px;
+    padding-left: 35px;
     padding-right: 30px;
   }
 }
@@ -257,7 +257,7 @@
 
   @media (min-width: $desktop-width) {
     top: -2px;
-    left: 51%;
+    left: 50%;
   }
 }
 
