@@ -165,7 +165,7 @@
 
 .extra-product__gift {
   background-color: $bg-base-green;
-  background-image: url("../../images/catalog/giftMobile@2x.png");
+  background-image: url("../../images/catalog/giftMobile@2x.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -174,7 +174,7 @@
   color: $base-color-white;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../images/catalog/giftTablet@2x.png");
+    background-image: url("../../images/catalog/giftTablet@2x.webp");
     height: 200px;
     display: flex;
     justify-content: space-between;
@@ -183,7 +183,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../images/catalog/giftDesktop@2x.png");
+    background-image: url("../../images/catalog/giftDesktop@2x.webp");
     height: 288px;
     max-width: 245px;
     margin: 0;

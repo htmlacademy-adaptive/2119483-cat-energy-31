@@ -61,6 +61,10 @@
   display: flex;
 }
 
+.header--no-js .header__toggle {
+  visibility: hidden;
+}
+
 .header--catalog-layout {
   border-bottom: 2px solid $header-line-grey;
 
