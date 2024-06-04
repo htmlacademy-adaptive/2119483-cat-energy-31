@@ -42,7 +42,7 @@
 
 .example__content-info {
   @media (min-width: $tablet-width) {
-    padding-bottom: 99px;
+    padding-bottom: 89px;
   }
 
   @media (min-width: $desktop-width) {
@@ -214,7 +214,7 @@
   padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 87px;
+    padding-bottom: 99px;
   }
 
   @media (min-width: $desktop-width) {
@@ -233,7 +233,7 @@
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    height: 77%;
+    height: 76%;
   }
 }
 
@@ -250,10 +250,6 @@
   position: absolute;
   top: 0;
   left: 50%;
-
-  @media (min-width: $tablet-width) {
-    top: -17px;
-  }
 
   @media (min-width: $desktop-width) {
     top: -2px;

@@ -107,7 +107,7 @@
 }
 
 .rule__item:first-child::after {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     right: 20px;
   }
 }
