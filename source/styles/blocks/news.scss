@@ -1,6 +1,6 @@
 .news {
   padding-bottom: 40px;
-  padding-top: 18px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
 
@@ -96,6 +96,7 @@
   height: 2px;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   left: 0;
   box-shadow: 100vw 0$bg-base-green;
   z-index: -1;
