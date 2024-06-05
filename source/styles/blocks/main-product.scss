@@ -47,7 +47,7 @@
   @media (max-width: $tablet-width) {
     content: "";
     position: absolute;
-    background-image: image-set(url("../../images/index/catBgMobile@1x.png") 1x, url("../../images/index/catBgMobile@2x.png") 2x);
+    background-image: image-set(url("../../images/index/catBgMobile@1x.webp") 1x, url("../../images/index/catBgMobile@2x.webp") 2x);
     background-repeat: no-repeat;
     background-color: $bg-hero-green;
     background-position: center;
@@ -59,7 +59,7 @@
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
-    background-image: image-set(url("../../images/index/catBgDesktop@1x.jpg") 1x, url("../../images/index/catBgDesktop@2x.jpg") 2x);
+    background-image: image-set(url("../../images/index/catBgDesktop@1x.webp") 1x, url("../../images/index/catBgDesktop@2x.webp") 2x);
     background-repeat: no-repeat;
     background-color: $bg-hero-green;
     top: 0;
@@ -84,7 +84,7 @@
 
     font-size: 60px;
     line-height: 60px;
-    padding-top: 55px;
+    padding-top: 51px;
     padding-left: 119px;
     padding-right: 119px;
     text-align: left;
@@ -171,10 +171,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 15px;
-    margin: 0;
-    margin-right: 172px;
+    font-size: 20px;
     text-align: center;
+    margin: 0;
+    margin-right: auto;
   }
 }
 

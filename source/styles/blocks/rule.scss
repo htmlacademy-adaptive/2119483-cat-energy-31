@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 59px;
+    padding-top: 51px;
   }
 }
 
@@ -48,7 +48,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 20% 20% 20% 20%;
     gap: 80px;
-    padding: 65px 0 0;
+    padding: 72px 0 0;
     display: grid;
   }
 }
@@ -99,6 +99,16 @@
     top: -40px;
     right: 0;
     font-family: $secondary-font;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -3px;
+  }
+}
+
+.rule__item:first-child::after {
+  @media (min-width: $tablet-width) {
+    right: 20px;
   }
 }
 

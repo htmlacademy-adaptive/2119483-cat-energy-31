@@ -2,7 +2,7 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,21 +53,21 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 49px;
+    gap: 45px 55px;
     padding-top: 69px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 20% 20% 20% 20%;
-    gap: 54px 80px;
+    gap: 49px 80px;
   }
 }
 
 .product__item {
   flex-direction: column;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 28px;
   position: relative;
 
   @media (min-width: $tablet-width) {

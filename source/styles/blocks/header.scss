@@ -39,6 +39,11 @@
   $bg-color: $base-color-white;
   opacity: 1;
   padding-right: 10px;
+  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .header__logo-title > img {
@@ -59,6 +64,10 @@
 
 .header--no-js .navigation {
   display: flex;
+}
+
+.header--no-js .header__toggle {
+  visibility: hidden;
 }
 
 .header--catalog-layout {

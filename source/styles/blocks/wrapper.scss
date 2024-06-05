@@ -9,8 +9,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: calc(50vw - 580px);
-    padding-right: calc(50vw - 580px);
-    box-sizing: content-box;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
