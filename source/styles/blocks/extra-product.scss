@@ -4,7 +4,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 33px;
+    padding-top: 45px;
   }
 }
 
@@ -148,6 +148,7 @@
     padding-left: 38px;
     font-size: 32px;
     line-height: 1;
+    box-shadow: 0 0 $base-color-white, 40px 0 $base-color-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -177,6 +178,7 @@
   height: 2px;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   right: 250px;
   box-shadow: -50vw 0 $bg-base-green;
   z-index: -1;
