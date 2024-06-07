@@ -2,8 +2,8 @@
   $bg-color:$base-color-white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-top: 13px;
+  align-items: center;
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width)
@@ -35,14 +35,27 @@
   background-image: url("../../icons/stack.svg#burger_menu_opened");
 }
 
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  // padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+    justify-content: flex-start;
+  }
+}
+
 .header__logo-title {
   $bg-color: $base-color-white;
   opacity: 1;
   padding-right: 10px;
-  padding-top: 7px;
+  //padding-top: 7px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-right: 10px;
   }
 }
 
@@ -62,12 +75,45 @@
   opacity: 0.6;
 }
 
+.wrapper-content.header--no-js {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .header--no-js .navigation {
   display: flex;
+  position: relative;
+  top: 0;
 }
 
 .header--no-js .header__toggle {
   visibility: hidden;
+}
+
+.header--no-js .header__logo-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
 }
 
 .header--catalog-layout {
